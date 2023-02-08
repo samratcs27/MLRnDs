@@ -1,0 +1,14 @@
+FROM tensorflow/tensorflow:2.1.1
+ENV TZ 'Asia/Kolkata'
+ENV PROJECT_DIR /app
+RUN echo $TZ > /etc/timezone
+RUN apt-get update
+RUN apt install -y default-jdk
+RUN rm /etc/localtime && \
+	ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
+	dpkg-reconfigure -f noninteractive tzdata && \
+	apt-get clean
+RUN apt-get install dos2unix
+RUN apt-get install -y python3-dev default-libmysqlclient-dev build-essential
+
+# pushed to aws as <aws-emr-base-docker-xyz>/<zzz-base>:latest

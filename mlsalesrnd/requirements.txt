@@ -1,0 +1,5 @@
+boto3==1.19.8
+botocore==1.22.8
+numpy==1.21.2
+pandas==1.0.5
+scikit_learn==1.2.1

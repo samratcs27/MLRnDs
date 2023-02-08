@@ -1,0 +1,12 @@
+{
+  "bucket_name_dumps": "sellinabundle",
+  "path_to_download": ["samplernd/car_data.csv"],
+  "path_to_download_forecast_data": ["samplernd/predict_data.csv"],
+  "path_to_download_model": ["samplernd/RandomForestRegressor.pkl"],
+  "path_to_save": ["data/car_data.csv"],
+  "path_to_save_forecast_data": ["data/predict_data.csv"],
+  "path_to_save_model": ["data/RandomForestRegressor.pkl"],
+  "path_to_upload": "samplernd/",
+  "aws_key": "xyz",
+  "aws_secret": "xyz"
+}
