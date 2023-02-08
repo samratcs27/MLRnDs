@@ -4,11 +4,11 @@ from setuptools import find_packages
 from setuptools import setup
 # botocore-1.18.18
 requires = (
-    "boto3==1.19.8",
-    "botocore==1.22.8",
-    "numpy==1.21.2",
-    "pandas==1.0.5",
-    "scikit_learn==1.2.1"
+    "boto3",
+    "botocore",
+    "numpy",
+    "pandas",
+    "scikit_learn"
 )
 
 
@@ -25,5 +25,5 @@ setup(
     packages=find_packages(include=['mlsalesrnd', 'mlsalesrnd*']),
     url="url",
     install_requires=requires,
-    python_requires='>=3.6'
+    python_requires='>=3.7'
 )
